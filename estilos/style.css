@@ -98,7 +98,6 @@ div.campo span {
 }
 
 div.campo > input {
-
     width: calc(100% - 55px);
     height: 100%;
 
@@ -107,6 +106,8 @@ div.campo > input {
     background-color: #49a09d;
     border-radius: 3px;
     border: none;
+
+    outline: none;
 
     font-size: 1em;
 
