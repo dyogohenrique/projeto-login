@@ -34,7 +34,7 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+
 
     width: 280px;
     height: 550px;
@@ -45,6 +45,7 @@ section#login {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
 
+    transform: translate(-50%, -50%);
     transition: width 200ms, height 300ms;
     transition-timing-function: ease;
 }
@@ -72,11 +73,13 @@ div#form > h1 {
 }
 
 div#form > p {
+    font-size: 0.8em;
     margin: 10px;
 }
 
 div.campo {
     background-color: #5f2c82;
+    
 
     margin: 10px;
     padding: 5px;
@@ -86,13 +89,18 @@ div.campo {
 
 div.campo span {
     color: white;
+
+    font-size: 2em;
+    
+    width: 40px;
+
+    padding: 5px;
 }
 
-#iemail, #isenha {
-    display: inline-block;
+div.campo > input {
 
-    width: 88%;
-    height: 10%;
+    width: calc(100% - 55px);
+    height: 100%;
 
     padding: 10px;
 
@@ -103,9 +111,15 @@ div.campo span {
     font-size: 1em;
 
     color: black;
+
+    transform: translateY(-5px);
 }
 
-input#bntEntrar, input#bntEsqSenha {
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+input#bntEntrar, #bntEsqSenha {
     display: block;
 
     width: 90%;
@@ -128,10 +142,28 @@ input#bntEntrar {
     margin-top: 20px;
 }
 
-input#bntEsqSenha {
+input#bntEntrar:hover, #bntEsqSenha:hover  {
+    background-color: #316c6a;
+    
+    color: white;
+
+    cursor: pointer;
+
+    transition: 200ms;
+}
+
+#bntEsqSenha {
     background-color: white;
 
     border: #49a09d solid 1px;
 
     color: #49a09d;
+
+    text-align: center;
+
+    text-decoration: none;
+}
+
+#bntEsqSenha span {
+    font-size: 0.9em;
 }
