@@ -1,1 +1,111 @@
 @charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width:992px){
+    body {
+        background: linear-gradient(to left bottom, #49a09d, #5f2c82) no-repeat center center;
+    }
+
+    section#login {
+        width: 90vw;
+    }
+
+    div#img {
+        float: left;
+
+        width: 30%;
+        height: 100%;
+
+        border-radius: 0;
+
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    div#form {
+        float: right;
+        
+        width: 70%;
+
+        margin: 5% 0;
+    }
+
+    div#form > h1 {
+        font-size: 2em;
+    }
+
+    div#form > form {
+        margin-top: 30px;
+    }
+
+    div.campo {
+        padding: 8px 0;
+    }
+
+    input#bntEntrar, input#bntEsqSenha {      
+        padding: 15px;
+
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media screen and (min-width:992px) {
+    body {
+        background: linear-gradient(to left bottom, #49a09d, #5f2c82) no-repeat center center;
+    }
+
+
+    section#login {
+        width: 990px;
+    }
+
+    div#img {
+        float: left;
+
+        width: 50%;
+        height: 100%;
+
+        border-radius: 0;
+
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    div#form {
+        float: right;
+        
+        width: 50%;
+
+        margin: 5% 0;
+    }   
+
+    div#form > h1 {
+        font-size: 2em;
+    }
+
+    div#form > form {
+        margin-top: 30px;
+    }
+
+    div.campo {
+        padding: 8px 0;
+    }
+
+    input#bntEntrar, input#bntEsqSenha {
+        display: block;
+    
+        width: 40%;
+    
+        margin: 10px 20px;
+    }
+
+    input#bntEntrar{
+        float: right;
+    }
+
+    input#bntEsqSenha {
+        float: left;
+    }
+    
+}

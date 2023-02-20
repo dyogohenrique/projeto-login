@@ -9,13 +9,18 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-color: #5f2c82;
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #5f2c82;
+
+    width: 100vw;
+    height: 100vh;
 }
 
 main {
@@ -32,23 +37,32 @@ section#login {
     transform: translate(-50%, -50%);
 
     width: 280px;
+    height: 550px;
      
 
     background-color: white;
 
     border-radius: 10px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+
+    transition: width 200ms, height 300ms;
+    transition-timing-function: ease;
 }
 
 div#img {
-    width: 100%;
-    height: 30vh;
+    display: block;
 
-    background: blue url(../imagens/estrelas.jpg) no-repeat center top;
+    height: 200px;
+
+    background: #5f2c82 url(../imagens/estrelas.jpg) no-repeat center top;
     background-size: cover;
 
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+div#form {
+    display: block;
 }
 
 div#form > h1 {
@@ -75,6 +89,11 @@ div.campo span {
 }
 
 #iemail, #isenha {
+    display: inline-block;
+
+    width: 88%;
+    height: 10%;
+
     padding: 10px;
 
     background-color: #49a09d;
@@ -91,7 +110,8 @@ input#bntEntrar, input#bntEsqSenha {
 
     width: 90%;
 
-    margin: 5px auto;
+    margin: 10px auto;
+    
     padding: 10px;
 
     font-weight: bold;
@@ -104,6 +124,8 @@ input#bntEntrar {
     background-color: #49a09d;
 
     color: white;
+
+    margin-top: 20px;
 }
 
 input#bntEsqSenha {
