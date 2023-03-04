@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width:992px){
+    /* Tablet */
     body {
         background: linear-gradient(to left bottom, #49a09d, #5f2c82) no-repeat center center;
     }
@@ -41,7 +42,7 @@
         padding: 8px 0;
     }
 
-    input#bntEntrar, #bntEsqSenha {      
+    #bntPrinc, #bntEsqSenha {      
         padding: 15px;
 
         margin-bottom: 20px;
@@ -51,6 +52,7 @@
 }
 
 @media screen and (min-width:992px) {
+    /* Desktop */
     body {
         background: linear-gradient(to left bottom, #49a09d, #5f2c82) no-repeat center center;
     }
@@ -96,7 +98,7 @@
         padding: 8px 0;
     }
 
-    input#bntEntrar, #bntEsqSenha {
+    #bntPrinc, #bntEsqSenha {
         display: block;
     
         width: 40%;
@@ -105,7 +107,7 @@
         margin: 10px 20px;
     }
 
-    input#bntEntrar{
+    #bntPrinc{
         float: right;
     }
 
