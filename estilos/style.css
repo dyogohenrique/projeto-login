@@ -116,6 +116,22 @@ div.campo > input {
     transform: translateY(-5px);
 }
 
+div.campo::-webkit-input-placeholder {
+    color: black;
+ }
+ 
+ div.campo:-moz-placeholder { /* Firefox 18- */
+    color: black;  
+ }
+ 
+ div.campo::-moz-placeholder {  /* Firefox 19+ */
+    color: black;  
+ }
+ 
+ div.campo:-ms-input-placeholder {  
+    color: black;  
+ }
+
 div.campo > input:focus-within {
     background-color: white;
 }
