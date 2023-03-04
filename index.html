@@ -27,7 +27,7 @@
             <div id="form">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar a sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post" autocomplete="on">
+                <form action="" method="GET" autocomplete="on"> <!--Mudar o method depois-->
                     <div class="campo">
                         <span class="material-symbols-outlined">person</span>
                         <input type="email" name="email" id="iemail" required placeholder="seu e-mail" autocomplete="email">
@@ -36,19 +36,17 @@
 
                     <div class="campo">
                         <span class="material-symbols-outlined">vpn_key</span>
-                        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder="sua senha" autocomplete="current-password">
+                        <input type="password" name="senha" id="isenha" required minlength="4" maxlength="20" placeholder="sua senha" autocomplete="current-password">
                         <label for="isenha"></label>
                     </div>
 
-                    <div>
-                        <input type="submit" value="Entrar" id="bntEntrar">
-                    </div>
-                    <a href="#" id="bntEsqSenha">
-                        Esqueci a senha <span class="material-symbols-outlined">mail</span>
-                    </a>
+                    <button type="submit" id="bntPrinc" onclick="autenticacao()">Entrar</button>
+                    <button type="button" id="bntEsqSenha">Esqueci a senha <span class="material-symbols-outlined">mail</span></button>
                 </form>
             </div>
         </section>
     </main>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
