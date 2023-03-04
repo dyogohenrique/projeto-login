@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* 
+    Paleta
+    verde: #49a09d
+    lilás: #5f2c82
+*/
+
+
+main {
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+
+    width: 80%;
+    height: 50%;
+     
+
+    background-color: white;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.26);
+
+    transform: translate(-50%, -50%);
+    transition: width 200ms, height 300ms;
+    transition-timing-function: ease;
+}
+
+#aviso {
+    margin: auto;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+#aviso > h1{
+    text-align: center;   
+}
+
+#aviso > p {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+#bntPrinc {
+    width: 90%;
+    margin-top: 25px;
+
+
+    text-align: center;
+
+    text-decoration: none;
+}
