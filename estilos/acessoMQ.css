@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width:992px){
+    /* Tablet */
+
+    article#info{
+        font-size: 1.8em;
+    }
+
+    .containerInfo {
+        margin-left: 80px;
+
+        width: 75%;
+
+        justify-content: center;
+
+    }
+
+    .txtGrande {
+        margin-right: 0;
+    }
+
+    #bntPrinc {
+        width: 70%;
+
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    /* Desktop */
+
+        article#info{
+        font-size: 1.9em;
+    }
+    
+    .containerInfo {
+        margin-left: 110px;
+
+        width: 75%;
+
+        justify-content: center;
+
+    }
+
+    .txtGrande {
+        margin-right: 0;
+    }
+
+    #bntPrinc{
+        margin-top: 100px;
+        width: 30%;
+    }
+}
