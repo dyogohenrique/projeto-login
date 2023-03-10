@@ -30,14 +30,14 @@ main {
     position: relative;
 }
 
-section#login {
+section#hub {
     position: absolute;
     top: 50%;
     left: 50%;
 
 
     width: 280px;
-    height: 550px;
+    min-height: 550px;
      
 
     background-color: white;
@@ -75,6 +75,13 @@ div#form > h1 {
 div#form > p {
     font-size: 0.8em;
     margin: 10px;
+
+}
+
+div#res {
+    color: red;
+
+    margin-left: 10px;
 }
 
 div.campo {

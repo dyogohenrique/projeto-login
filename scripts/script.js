@@ -6,15 +6,16 @@ recuperarSenha.addEventListener('click' ,() => {
 function autenticacao() {
     let email = document.getElementById('iemail').value;
     let senha = document.getElementById('isenha').value;
+    let resp = document.getElementById('res');
 
     if (email === 'exemplo@gmail.com' && senha === '1234'){
-            window.location.href = 'acesso.html';
+        window.location.href = 'acesso.html';
     } else {
-        window.alert('Email ou senha estão incorretos.');
+        resp.innerHTML = `Email ou senha estão incorretos.`
     }
 }
 
-document.getElementById('bntEntrar').addEventListener('click', function(event) {
+document.getElementById('bntPrinc').addEventListener('click', function(event) {
     event.preventDefault();
     autenticacao();
 });

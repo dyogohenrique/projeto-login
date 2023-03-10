@@ -6,11 +6,21 @@
         background: linear-gradient(to left bottom, #49a09d, #5f2c82) no-repeat center center;
     }
 
-    section#login {
+    section#hub {
         width: 90vw;
+        height: 550px;
     }
 
+    div#res {
+        color: red;
+
+        margin-left: 10px;
+        margin-bottom: -10px;
+    }
+    
+
     div#img {
+        display: block;
         float: left;
 
         width: 30%;
@@ -58,8 +68,9 @@
     }
 
 
-    section#login {
+    section#hub {
         width: 990px;
+        height: 550px;
     }
 
     div#img {
